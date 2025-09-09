@@ -3,12 +3,12 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "eaglesqltools"
+name = "virgo_db_sql"
 version = "2.0.0"
 authors = [
   { name="Kyle Oman", email="kyle.a.oman@durham.ac.uk" },
 ]
-description = "Utilities for accessing EAGLE public database."
+description = "Utilities for accessing Virgo databases (EAGLE, Millennium, milli-Millennium)."
 readme = "README.md"
 requires-python = ">=3.7"
 classifiers = [
@@ -19,5 +19,8 @@ classifiers = [
 dependencies = ["numpy"]
 
 [project.urls]
-"Homepage" = "https://github.com/kyleaoman/eagleSqlTools"
-"Bug Tracker" = "https://github.com/kyleaoman/eagleSqlTools/issues"
+"Homepage" = "https://github.com/" 
+"Bug Tracker" = "https://github.com/"
+
+[tool.setuptools.packages.find]
+include = ["virgo_db_sql*"]

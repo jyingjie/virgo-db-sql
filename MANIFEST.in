@@ -1,2 +1,2 @@
 #include <filename> for non-python-code files
-include eagleSqlTools/VERSION
+# No extra files to include for virgo_db_sql at present
