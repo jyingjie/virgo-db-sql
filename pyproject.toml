@@ -7,6 +7,7 @@ name = "virgo_db_sql"
 version = "3.0.0"
 authors = [
   { name="Kyle Oman", email="kyle.a.oman@durham.ac.uk" },
+  { name="AI Assistant", email="noreply@example.com" },
 ]
 description = "Utilities for accessing Virgo databases (EAGLE, Millennium, milli-Millennium)."
 readme = "README.md"
