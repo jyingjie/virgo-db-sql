@@ -4,6 +4,7 @@ A lightweight Python client for querying Virgo databases: EAGLE, Millennium, and
 ## Installation
 
 - From PyPI (placeholder): `pip install virgo_db_sql`
+- From GitHub: `pip install git+https://github.com/jyingjie/virgo-db-sql.git`
 - From source:
   - `git clone <your-repo-url>`
   - `pip install -e .`
