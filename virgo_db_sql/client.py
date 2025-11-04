@@ -97,13 +97,13 @@ class VirgoDBClient:
             if not line.startswith(b"#"):
                 break
             else:
-                m = re.match(br"^#COLUMN ([0-9]+) name=([\w]+) "
+                m = re.match(br"^#COLUMN ([0-9]+) name=([\w]*) "
                              br"JDBC_TYPE=(-?[0-9]+) JDBC_TYPENAME=([\w]+)\n$",
                              line)
                 if m is not None:
                     columns.append(m.groups())
                 else:
-                    raise Exception("Don't understand column info: "+line)
+                    raise Exception("Don't understand column info: " + line.decode())
 
         # Construct record type for the output
         types = [numpy_dtype[col[3]] for col in columns]
